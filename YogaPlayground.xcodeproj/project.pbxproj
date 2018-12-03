@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05F12FE73F7769AD1712601F /* Pods_YogaPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132220CFFE4911B15C8BC9EC /* Pods_YogaPlayground.framework */; };
 		E485B16421AD430400978928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E485B16321AD430400978928 /* AppDelegate.swift */; };
 		E485B16621AD430400978928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E485B16521AD430400978928 /* ViewController.swift */; };
 		E485B16921AD430400978928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E485B16721AD430400978928 /* Main.storyboard */; };
@@ -15,6 +16,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		132220CFFE4911B15C8BC9EC /* Pods_YogaPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53EAC3998BEC29B70B95996D /* Pods-YogaPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YogaPlayground/Pods-YogaPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		62AF7B3B1042A71050607F43 /* Pods-YogaPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-YogaPlayground/Pods-YogaPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		E40F6AE121AD43CD00F3CD22 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E485B16021AD430400978928 /* YogaPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E485B16321AD430400978928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E485B16521AD430400978928 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F12FE73F7769AD1712601F /* Pods_YogaPlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CD5E27321F4E5DBF1D605EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				132220CFFE4911B15C8BC9EC /* Pods_YogaPlayground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82841970023B7D9372304E3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53EAC3998BEC29B70B95996D /* Pods-YogaPlayground.debug.xcconfig */,
+				62AF7B3B1042A71050607F43 /* Pods-YogaPlayground.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E485B15721AD430400978928 = {
 			isa = PBXGroup;
 			children = (
 				E485B16221AD430400978928 /* YogaPlayground */,
 				E485B16121AD430400978928 /* Products */,
+				82841970023B7D9372304E3B /* Pods */,
+				2CD5E27321F4E5DBF1D605EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +79,7 @@
 		E485B16221AD430400978928 /* YogaPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				E40F6AE121AD43CD00F3CD22 /* Playground.playground */,
 				E485B16321AD430400978928 /* AppDelegate.swift */,
 				E485B16521AD430400978928 /* ViewController.swift */,
 				E485B16721AD430400978928 /* Main.storyboard */,
@@ -71,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E485B17221AD430500978928 /* Build configuration list for PBXNativeTarget "YogaPlayground" */;
 			buildPhases = (
+				09505214DC5FE045C23267A5 /* [CP] Check Pods Manifest.lock */,
 				E485B15C21AD430400978928 /* Sources */,
 				E485B15D21AD430400978928 /* Frameworks */,
 				E485B15E21AD430400978928 /* Resources */,
+				C3DCA034D12548B9EDE10556 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +157,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09505214DC5FE045C23267A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YogaPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3DCA034D12548B9EDE10556 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YogaPlayground/Pods-YogaPlayground-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YogaPlayground/Pods-YogaPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E485B15C21AD430400978928 /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		E485B17321AD430500978928 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53EAC3998BEC29B70B95996D /* Pods-YogaPlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +373,7 @@
 		};
 		E485B17421AD430500978928 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AF7B3B1042A71050607F43 /* Pods-YogaPlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

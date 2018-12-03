@@ -1,0 +1,16 @@
+PODS:
+  - Yoga (1.9.0)
+
+DEPENDENCIES:
+  - Yoga
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Yoga
+
+SPEC CHECKSUMS:
+  Yoga: aaae8abea68951f60bee05f6277d3eed90bb91bb
+
+PODFILE CHECKSUM: 8bba8ae65042cb2b8a7d689df81aa367a3d2b114
+
+COCOAPODS: 1.5.3
